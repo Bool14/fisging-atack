@@ -5,7 +5,7 @@ import httpx
 app = FastAPI()
 
 MAKE_WEBHOOK_URL = "https://hook.us2.make.com/g4uxj3p1ic3o4as6f1jx3sqyrxivva5l"
-REDIRECT_URL = "https://sites.google.com/grande-studios.com/phishingsim?usp=sharing" 
+REDIRECT_URL = "https://sites.google.com/grande-studios.com/phishingsim/p%C3%A1gina-principal" 
 
 @app.get("/click")
 async def handle_click(request: Request, background_tasks: BackgroundTasks):
